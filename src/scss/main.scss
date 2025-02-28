@@ -1,0 +1,17 @@
+@use "./base/vars";
+@use "./base/normalize.scss";
+@use "./mixins";
+
+
+@use "./blocks/header";
+@use "./blocks/footer";
+@use "./blocks/page";
+@use "./blocks/about";
+@use "./blocks/service";
+@use "./blocks/free";
+@use "./blocks/works";
+@use "./blocks/products";
+@use "./blocks/contact";
+@use "./blocks/questions";
+
+
