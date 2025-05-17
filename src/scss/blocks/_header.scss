@@ -9,6 +9,7 @@
   top: 0;
   z-index: 999;
 
+
   &__content{
     display: flex;
     justify-content: space-between;
@@ -40,8 +41,9 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 999;
-    height: 50vh;
+    height: 75vh;
     font-size: 20px;
+
   }
 
   &__logo {

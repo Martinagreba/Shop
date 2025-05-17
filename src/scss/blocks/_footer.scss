@@ -1,0 +1,415 @@
+.footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #141615;
+  padding-bottom: 20px;
+ 
+  
+
+  &__part-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3E4042;
+    padding: 20px;
+    width: 100%;
+    gap: 5px;
+   
+    
+  }
+
+  &__text{
+    font-size: 10px;
+    text-align: left;
+    width: 100%;
+    color: #dddddd;
+    max-width: 80%;
+  }
+
+  &__button-book{
+    background-color:white;
+    color: #141615;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      text-transform: uppercase;
+      font-size: 10px;
+      cursor: pointer;
+      border: 0.5px solid #000;
+      transition: background-color 0.3s ease;
+      padding: 8px 14px;
+
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+      }
+  }
+
+&__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1600px;
+  
+
+}
+  &__part-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 10px;
+    box-sizing: border-box;
+    max-width: 60%;
+   
+  }
+
+&__section-title {
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 5px;
+
+}
+
+&__list{
+  text-align: left;
+}
+&__link{
+  color: #a1a2a1;
+  font-size: 10px;
+
+  &:hover{
+    color: white;
+    
+  }
+}
+
+&__part-3 {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 40%;
+  overflow: hidden;
+  word-wrap: break-word;
+  padding: 10px 20px;
+  
+}
+
+
+
+//.footer__part-2, .footer__part-3 {
+    //border: 1px solid red; 
+//}
+
+&__newsletter-text{
+  color: white;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+&__form {
+  display: flex;
+  //width: 100%;
+  border-radius: 50px;
+  border: 2px solid white;
+  margin-bottom: 5px;
+  overflow: hidden;    
+  margin: 0;
+  padding: 0;
+ 
+ 
+
+
+}
+
+&__input{
+  background-color: #141615;
+  color: white;
+  font-size: 10px;
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 3px 5px;
+  min-width: 0;
+  
+
+  &::placeholder{
+    color: #a1a2a1;
+  }
+}
+
+&__button{
+  background-color: white;
+  color: black;
+  font-size: 10px;
+  padding: 3px 5px;
+  border-radius: 50px;
+  border: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+&__label{
+  display: flex;
+  padding: 10px;
+  padding-left: 0;
+  color: white;
+  font-size: 10px;
+  text-align: left;
+  align-items:flex-start;
+  margin-right: 20px;
+  gap: 5px;
+  max-width: 100%;
+}
+
+span {
+  display: inline-block;
+
+  &:hover {
+    color: white;
+  }
+}
+
+&__checkbox {
+  cursor: pointer;
+  position: relative; 
+}
+
+input[type="checkbox"] {
+  background-color: #141615;
+  border: 2px solid white;
+  appearance: none;
+  padding: 5px;
+  width: 12px; 
+  height: 12px;
+  vertical-align: middle;
+  border-radius: 2.5px;
+  margin-top: 3px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid  white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: block;
+}
+
+&__social-icons {
+  display: flex;              
+  justify-content: flex-start;   
+  align-items: flex-start;      
+  gap: 5px;                 
+  padding: 10px;  
+  box-sizing: border-box;           
+}
+
+&__social-link{
+  width: 12px;              
+  height: 12px;
+  transition: transform 0.2s;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+&__social-link:hover {
+  transform: scale(1.1);     
+  cursor: pointer;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+&__scroll-top-button{
+  position: absolute;
+  right: 5px;
+  top: 225px;
+  padding: 14px;
+ cursor: pointer;
+ display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+svg {
+  width: 28px;
+  height: 28px;
+}
+
+}
+
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    &__text {
+      font-size: 12px;
+    }
+
+    &__link{
+      font-size: 12px;
+    }
+
+    &__newsletter-text{
+       font-size: 12px;
+    }
+
+    &__input{
+      font-size: 12px;
+      padding: 6px 12px;
+}
+
+&__button{
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+&__label{
+font-size: 12px;
+}
+
+&__social-icons {
+gap: 10px;
+}
+
+&__scroll-top-button{
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+}
+
+&__part-2{
+  gap: 25px;
+}
+}
+
+@media screen and (min-width: 1025px){
+  .footer {
+   
+    &__text {
+      font-size: 14px;
+    }
+
+      &__link{
+        font-size: 14px;
+      }
+  
+      &__newsletter-text{
+         font-size: 14px;
+         margin-bottom: 15px;
+      }
+  
+      &__input{
+        font-size: 14px;
+        padding: 6px 12px;
+  }
+  
+  &__button{
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  
+  &__label{
+  font-size: 14px;
+  margin-bottom: 15px;
+  }
+  
+  &__social-icons {
+  gap: 10px;
+  
+  }
+  
+  &__scroll-top-button{
+    svg {
+      width: 50px;
+      height: 50px;
+    }
+    right: 40px;
+    top: 270px;
+  
+  }
+  
+  &__part-2{
+    gap: 140px;
+    padding: 20px;
+    padding-left: 40px;
+  
+    
+
+  }
+  &__part-1{
+    padding: 20px 40px;
+  }
+
+  &__button-book{
+      border-radius: 60px;
+      text-transform: uppercase;
+      font-size: 12px;
+      cursor: pointer;
+      border: 0.5px solid #000;
+      transition: background-color 0.3s ease;
+      padding: 14px 14px;
+      min-width: 140px;
+    }
+
+    &__part-3{
+      padding-top: 20px;
+      margin-left: auto;
+      padding-left: 40px;
+    }
+
+    &__section-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    &__form {
+      max-width: 400px;
+      //margin: 0 auto;
+      margin-bottom: 15px;
+      
+    }
+
+    &__input{
+      font-size: 12px;
+      padding: 0 20px;
+      min-width: 0;
+
+}
+
+&__button{
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  padding: 15px 60px;
+  border-radius: 50px;
+  border: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+}
+}
+}
