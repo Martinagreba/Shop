@@ -3,6 +3,7 @@ const links = document.querySelector('.js-header__nav-list');
 const navLogo = document.querySelector('.header__logo');
 const contact = document.getElementById('contact-form');
 const faqs = document.querySelectorAll(".faq__item");
+const form = document.querySelector('.register__form');
 
 // Display Mobile Menu
 const mobileMenu = () => {
@@ -94,4 +95,8 @@ scrollLinks.forEach(link => {
       links.classList.remove('active');
     }
   });
-});
+  
+  });
+
+
+ 
